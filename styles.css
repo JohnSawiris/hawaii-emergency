@@ -131,7 +131,9 @@ ALERT BOX STYLING RULES
 }
 
 .alert-box-container .alert-box {
+  flex-basis: 70%;
   width: 70%;
+  max-width: 700px;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -197,5 +199,31 @@ MEDIA QUERIES RULES
     width: 100%;
     margin-bottom: 1rem;
     justify-content: center;
+  }
+
+  .alert-box-container .alert-box {
+    flex-basis: 90%;
+    width: 90%;
+  }
+
+  .alert-box-container .alert-box .alert-box-header h4 {
+    font-size: 0.9rem;
+  }
+
+  .alert-box-container .alert-box .alert-box-message .message-title {
+    font-size: 1.2rem;
+  }
+
+  .alert-box-container .alert-box .alert-box-message .message-content {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--subheader-text-color);
+  }
+}
+
+@media (min-width: 416px) and (max-width: 600px) {
+  .alert-box-container .alert-box {
+    flex-basis: 80%;
+    width: 80%;
   }
 }
