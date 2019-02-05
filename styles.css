@@ -117,7 +117,17 @@ ALERT BOX STYLING RULES
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.01;
+  pointer-events: none;
+  transition: all 300ms ease;
+}
+
+.alert-box-container.show {
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: all;
 }
 
 .alert-box-container .alert-box {
@@ -141,7 +151,6 @@ ALERT BOX STYLING RULES
 }
 
 .alert-box-container .alert-box .alert-box-header.full-alert {
-  /* background-color: #e53935; */
   background-color: var(--full-alert-bg-color);
   color: #fff;
 }
@@ -155,6 +164,11 @@ ALERT BOX STYLING RULES
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.alert-box-container .alert-box .alert-box-header .close-btn {
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .alert-box-container .alert-box .alert-box-message {
