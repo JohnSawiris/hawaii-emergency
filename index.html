@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Hawaii Emergency Response System</title>
   </head>
@@ -15,14 +19,38 @@
     <nav class="navigation">
       <h3 class="title">hawaii emergency response system</h3>
     </nav>
+    <!-- NAVIGATION ENDS -->
     <main class="dashboard">
       <h2 class="subheader">Select from the options below</h2>
       <div class="initiation-buttons">
-        <button class="button drill">initiate a drill</button>
+        <button class="button drill">
+          <i class="material-icons"> warning </i>
+          <span>initiate a drill</span>
+        </button>
         <button class="button full-alert">
-          initiate a full missile alert
+          <i class="material-icons"> warning </i>
+          <span>initiate a full missile alert</span>
         </button>
       </div>
+      <!-- ALERT BOX BEGINS -->
+      <div class="alert-box-container">
+        <div class="alert-box">
+          <div class="alert-box-header">
+            <i class="material-icons"> warning </i>
+            <h4>emergency alerts</h4>
+          </div>
+          <div class="alert-box-message">
+            <div class="message-title">emergency alert</div>
+            <p class="message-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              nihil molestias culpa velit accusantium repudiandae vitae qui
+              ipsam, ad distinctio dolores, vero officia. Quaerat officia autem
+              corrupti quasi voluptates. Id.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ALERT BOX ENDS -->
     </main>
   </body>
 </html>
